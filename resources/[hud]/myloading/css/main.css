@@ -1,0 +1,218 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    
+}
+
+
+html{
+    overflow: hidden;
+    
+    
+}
+body{
+    overflow: hidden;
+    box-sizing: border-box;
+    background: black;
+    /* cursor:url("../img/cursor.png"),none; */
+   
+}
+/* задаем цвет фона для контейнера nav. */
+.bg{
+  position: absolute;
+  top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../img/loading2.gif");
+    background-position: center;
+    background-size: cover;
+    /* position: absolute;
+    top: -300px; */
+    z-index: -1;
+    
+    
+   
+    transition: opacity ease-out 1s;
+}
+
+#cursor{
+  width: 16px;
+  position: absolute;
+  z-index: 2000000; 
+}
+
+.text_cont, #aud-control{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  top: 0;left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+}
+
+.text_cont> p{
+    color: transparent;
+    font-size: 70px;
+    font-family: 'Exo 2', sans-serif;
+    background: rgba(0,0,0,0.3);
+    width: 100%;
+    text-align: center;
+
+    padding: 1rem 0;
+    
+
+    transition: color ease-out 1s;
+}
+
+i{
+  display: inline-block;
+  border-radius: 50%;
+  background: transparent;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin: 0 5px;
+
+  animation:circles .8s infinite cubic-bezier(0.62, 0.34, 0.41, 0.72) ;
+  
+}
+
+.i3,.i4{
+  animation-delay: 1.3s;
+}
+.i2,.i5{
+  animation-delay: 1.5s;
+}
+.i1,.i6{
+  animation-delay: 1.6s;
+}
+
+@keyframes circles{
+  from,to{
+
+  }
+  50%{
+    transform: translateY(-40px) scale(1.3);
+    background: rgba(255, 255, 255, 0.6);
+    border-radius: 30%;
+  }
+}
+
+span{
+  transition: color .2s cubic-bezier(0.62, 0.34, 0.41, 0.72);
+}
+
+b{
+  color: rgb(200, 255, 0);
+}
+/* #aud-control{
+   margin: 50px auto;
+}
+
+#aud-volume{
+   width: 200px;
+   height: 34px;
+   -webkit-appearance: none;
+   margin: 10px 0;
+   width: 100%;
+  cursor: none;
+   
+   background: transparent;
+} */
+
+
+
+
+
+
+  /* #aud-volume:focus {
+    outline: none;
+  }
+  #aud-volume::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 7px;
+    cursor: url("../img/cursor.png"),none;
+    animation: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: #000000;
+    border-radius: 5px;
+    border: 0px solid #010101;
+  }
+  #aud-volume::-webkit-slider-thumb {
+    box-shadow: 1px 1px 1px #000031;
+    border: 1px solid #00001E;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    cursor: url("../img/cursor.png"),none;
+    -webkit-appearance: none;
+    margin-top: -10px;
+  }
+  #aud-volume:focus::-webkit-slider-runnable-track {
+    background: #000000;
+  }
+  #aud-volume::-moz-range-track {
+    width: 100%;
+    height: 7px;
+    cursor: url("../img/cursor.png"),none;
+    animation: 0.2s;
+    box-shadow: 1px 1px 1px #000000;
+    background: #000000;
+    border-radius: 5px;
+    border: 0px solid #010101;
+  }
+  #aud-volume::-moz-range-thumb {
+    box-shadow: 1px 1px 1px #000031;
+    border: 1px solid #00001E;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    cursor: url("../img/cursor.png"),none;
+  }
+  #aud-volume::-ms-track {
+    width: 100%;
+    height: 7px;
+    cursor: url("../img/cursor.png"),none;
+    animation: 0.2s;
+    background: transparent;
+    border-color: transparent;
+    color: transparent;
+  }
+  #aud-volume::-ms-fill-lower {
+    background: #000000;
+    border: 0px solid #010101;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+  #aud-volume::-ms-fill-upper {
+    background: #000000;
+    border: 0px solid #010101;
+    border-radius: 10px;
+    box-shadow: 1px 1px 1px #000000;
+  }
+  #aud-volume::-ms-thumb {
+    margin-top: 1px;
+    box-shadow: 1px 1px 1px #000031;
+    border: 1px solid #00001E;
+    height: 26px;
+    width: 26px;
+    border-radius: 15px;
+    background: #FFFFFF;
+    cursor: url("../img/cursor.png"),none;
+  }
+  #aud-volume:focus::-ms-fill-lower {
+    background: #000000;
+  }
+  #aud-volume:focus::-ms-fill-upper {
+    background: #000000;
+  } */
+
+
