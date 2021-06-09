@@ -203,14 +203,14 @@ end)
 RegisterCommand("do", function(source, args, rawCommand)
     local message = table.concat(args, " ", 1)
 
-    TriggerEvent("chatMessage", "^5".."^*".. message .. " - "  ..  GetPlayerName(source).."("..GetPlayerServerId(source)..")")
+    TriggerEvent("chatMessage", "^5".."^*".. message .."^0".. " - "  .. "^0[ ^5^*" .. GetPlayerName(source).."^0 ]")
 end)
 
 
 RegisterCommand("me", function(source, args, rawCommand)
     local message = table.concat(args, " ", 1)
 
-    TriggerEvent("chatMessage", "^2^*"..  GetPlayerName(source).."("..GetPlayerServerId(source)..")".." ".. message )
+    TriggerEvent("chatMessage", "^0^*[ " .. "^2"..  GetPlayerName(source).."^0 ]^2^* ".." ".. message )
 end)
 
 RegisterCommand("try", function(source, args, rawCommand)
