@@ -61,5 +61,5 @@
 
 --
 
-spawnpoint 'a_m_y_skater_01' { x = -161.515533,y = 881.9192,z = 237.139862}
-spawnpoint 'a_m_y_skater_02' { x = -161.515533,y = 881.9192,z = 237.139862}
+spawnpoint 'a_m_y_skater_01' { x = -597.7397,y = 373.131622,z = 97.84941}
+spawnpoint 'a_m_y_skater_02' { x = -597.7397,y = 373.131622,z = 97.84941}
