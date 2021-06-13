@@ -44,7 +44,7 @@ em {
   width: 38%;
   height: 22%;
   max-width: 1000px;
-  background-color: rgba(68, 68, 68, 0.15);
+  background-color: rgba(68, 68, 68, 0.05);
   -webkit-animation-duration: 2s;
 }
 
@@ -76,7 +76,7 @@ em {
   display: flex;
   align-items: stretch;
   width: 100%;
-  background-color: rgba(26, 26, 26, 0.781);
+  background-color: rgba(26, 26, 26, 0.25);
 }
 
 .chat-hide-state {

@@ -153,11 +153,30 @@ Citizen.Wait(0)
 end)
 
 
+RegisterCommand("flip", function()
+  local vehicle = GetVehiclePedIsIn(GetPlayerPed(-1),true)
+    
+
+    SetVehicleOnGroundProperly(
+		vehicle --[[ Vehicle ]]
+	)
+
+end)
 
 
 
 
--- 
+
+
+-- RegisterCommand("do", function(source, args, rawCommand)
+RegisterCommand("wheel", function(source, args, rawCommand)
+    local message = tonumber(table.concat(args, " ", 1))
+    local player = GetPlayerPed(-1)
+    local vehicle = GetVehiclePedIsIn(player,false)
+print(message)
+print("Size"..GetVehicleWheelSize(vehicle))
+    SetVehicleWheelSize(vehicle, message);
+end)
 
 
 
@@ -331,6 +350,7 @@ RegisterCommand("veh",function(source, args)
             weaponComponent("weapon_"..message, "COMPONENT_AT_PI_SUPP")
             weaponComponent("weapon_"..message, "COMPONENT_AT_SR_SUPP")
             weaponComponent("weapon_"..message, "COMPONENT_AT_AR_SUPPw")
+            weaponComponent("weapon_"..message, "COMPONENT_AT_AR_SUPP")
             
             notify("You got "..message .."with suppressor")
             
