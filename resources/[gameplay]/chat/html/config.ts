@@ -7,10 +7,10 @@ export default {
     'print': '<pre>{0}</pre>',
     'example:important': '<h1>^2{0}</h1>'
   },
-  fadeTimeout: 7000,
-  suggestionLimit: 5,
+  fadeTimeout: 4000,
+  suggestionLimit: 3,
   style: {
-    background: 'rgba(52, 73, 94, 0.7)',
+    background: 'rgba(46, 46, 46, 0.05)',
     width: '38vw',
     height: '22%',
   }
