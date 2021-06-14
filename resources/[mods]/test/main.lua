@@ -222,15 +222,25 @@ end)
 RegisterCommand("do", function(source, args, rawCommand)
     local message = table.concat(args, " ", 1)
 
-    TriggerEvent("chatMessage", "^5".."^*".. message .."^0".. " - "  .. "^0[ ^5^*" .. GetPlayerName(source).."^0 ]")
+    --TriggerEvent("chatMessage", "^5".."^*".. message .."^0".. " - "  .. "^0[ ^5^*" .. GetPlayerName(source).."^0 ]")
+
+
+    TriggerServerEvent('do', table.concat(args, " "))
+
+
+
 end)
 
 
 RegisterCommand("me", function(source, args, rawCommand)
     local message = table.concat(args, " ", 1)
 
-    TriggerEvent("chatMessage", "^0^*[ " .. "^2"..  GetPlayerName(source).."^0 ]^2^* ".." ".. message )
+    TriggerServerEvent('me', table.concat(args, " "))
+
+   -- TriggerEvent("chatMessage", "^0^*[ " .. "^2"..  GetPlayerName(source).."^0 ]^2^* ".." ".. message )
 end)
+
+
 
 RegisterCommand("try", function(source, args, rawCommand)
     local message = table.concat(args, " ", 1)
@@ -242,7 +252,9 @@ RegisterCommand("try", function(source, args, rawCommand)
     elseif key==1 then result = "[^1Неудачно^0]"
     end
 
-    TriggerEvent("chatMessage", "^*"..  GetPlayerName(source).."("..GetPlayerServerId(source)..")".." ".. message .." - " .. result)
+    TriggerServerEvent('try', table.concat(args, " "),result)
+
+    --TriggerEvent("chatMessage", "^*"..  GetPlayerName(source).."("..GetPlayerServerId(source)..")".." ".. message .." - " .. result)
     
 end)
 
